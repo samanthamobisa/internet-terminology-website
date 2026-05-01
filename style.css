@@ -1,0 +1,117 @@
+```css
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2E0D2; /* soft beige */
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    background-color: #9E182B; /* deep red */
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 6px 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+    background-color: #F2AFBC; /* medium pink */
+    color: #1a1a1a;
+}
+
+/* =========================
+   MAIN CONTENT AREA
+========================= */
+
+main {
+    max-width: 950px;
+    margin: 30px auto;
+    background-color: #F9CBD6; /* light pink */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #9E182B;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #9E182B; /* same as nav for consistency */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+}
+```
